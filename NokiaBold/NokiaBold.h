@@ -2,10 +2,10 @@
 #include <Adafruit_GFX.h>
 /* PROPERTIES
 
-FONT_NAME NokiaFont
+FONT_NAME NokiaBold
 PIXEL_SIZE 7
 */
-const uint8_t NokiaFontBitmaps[] PROGMEM = {
+const uint8_t NokiaBoldBitmaps[] PROGMEM = {
 /* ' ' 0x20 */ 
 /* '!' 0x21 */ 0xFF, 0xCC, 
 /* '"' 0x22 */ 0xB4, 
@@ -103,7 +103,7 @@ const uint8_t NokiaFontBitmaps[] PROGMEM = {
 /* '~' 0x7E */ 0x45, 0x44, 
 };
 
-const GFXglyph NokiaFontGlyphs[] PROGMEM = {
+const GFXglyph NokiaBoldGlyphs[] PROGMEM = {
 /* ' ' 0x20 */ {     0,    0,   0,   2,   0,    0 },
 /* '!' 0x21 */ {     0,    2,   7,   3,   0,   -8 },
 /* '"' 0x22 */ {     2,    3,   2,   4,   0,   -8 },
@@ -201,8 +201,8 @@ const GFXglyph NokiaFontGlyphs[] PROGMEM = {
 /* '~' 0x7E */ {   375,    5,   3,   6,   0,   -6 },
 };
 
-const GFXfont NokiaFont PROGMEM = {
-(uint8_t*)NokiaFontBitmaps,
-(GFXglyph*)NokiaFontGlyphs,
+const GFXfont NokiaBold PROGMEM = {
+(uint8_t*)NokiaBoldBitmaps,
+(GFXglyph*)NokiaBoldGlyphs,
 0x20, 0x7E, 8 
 };
